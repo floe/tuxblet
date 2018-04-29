@@ -28,4 +28,7 @@ Works (surprisingly) out of the box.
 
 ## Bluetooth
 
-Rather annoying, seems to require some custom hciattach?
+Rather annoying, seems to require kernel patch + some custom hciattach? Since this is being worked on, I may just use an USB Bluetooth dongle in the dock for the moment.
+  * https://github.com/lwfinger/rtl8723bs_bt (custom hciattach + fw)
+  * https://raw.githubusercontent.com/Manouchehri/vi8/master/Ubuntu_support_files/rfkill.patch (rfkill tweak)
+  * https://github.com/Miouyouyou/MyyQi/issues/7 (lenghty discussion for similar platform)
