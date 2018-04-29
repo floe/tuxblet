@@ -1,0 +1,1 @@
+# chuwi-hi10-pro
