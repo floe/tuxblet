@@ -25,7 +25,7 @@ Not working (yet). See:
   * https://github.com/plbossart/UCM/tree/master/bytcr-rt5651
   * https://github.com/AdamWill/baytrail-m/blob/master/alsa/t100_B.state
 
-## Touchscreen
+## Touchscreen (Silead MSSL1680)
 
 put firmware/mssl1680.fw into /lib/firmware/silead/. Needs calibration. See:
   * https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
