@@ -27,9 +27,10 @@ Not working (yet). See:
 
 ## Touchscreen
 
-put firmware/mssl1680.fw into /lib/firmware/silead/. Needs calibration. See
-https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
-
+put firmware/mssl1680.fw into /lib/firmware/silead/. Needs calibration. See:
+  * https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
+  * https://github.com/pbnelson/rotswap/
+  
 ## Screen rotation
 
 Works (surprisingly) out of the box.
