@@ -1,4 +1,4 @@
-List of default partitions
+# List of partitions on stock install
 
 ### U-Boot partitions, key storage
 ```
