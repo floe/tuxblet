@@ -1,15 +1,18 @@
 # chuwi-hi10-pro
 
 I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04 on the Chuwi Hi10 Pro.
+
+My device:
   * Chuwi Hi10 ___Pro___
   * HQ64 series, CPU Atom x5-Z8350
   * serial number HQ64G421709xxxxx
-  * stock kernel 4.15
+  * Ubuntu 18.04, stock kernel 4.15
 
 Sources:
   * https://github.com/danielotero/linux-on-hi10
   * https://wiki.gnome.org/BastienNocera/Ondav975w
   * https://jonathansblog.co.uk/hardware-hacking
+  * https://forum.chuwi.com/thread-2341-1-1.html
 
 ## GPU
 
