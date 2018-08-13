@@ -24,11 +24,15 @@ Intel HD Graphics - works out of the box, accelerated FullHD videos in Youtube o
 
 ### WiFi
 
-RTL8723BS - works out of the box, easily getting 4 Mb/s downloads. No complaints.
+RTL8723BS - works out of the box, easily getting 4 MB/s downloads. No complaints.
 
 ### Suspend
 
 Works out of the box, pleasant surprise :-)
+
+### Screen rotation
+
+Works (surprisingly) out of the box. Thanks systemd ;-)
 
 ### Audio
 
@@ -44,10 +48,6 @@ put `mssl1680.fw` into `/lib/firmware/silead/`. Needs calibration. See:
   * https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
   * https://github.com/pbnelson/rotswap/
   
-### Screen rotation
-
-Works (surprisingly) out of the box.
-
 ### Bluetooth
 
 RTL8723BS - rather annoying, seems to require kernel patch + some custom hciattach? Since this is being worked on, I may just use an USB Bluetooth dongle in the dock for the moment.
