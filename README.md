@@ -40,7 +40,7 @@ Not working (yet). See:
 
 Silead MSSL1680
 
-put firmware/mssl1680.fw into /lib/firmware/silead/. Needs calibration. See:
+put `mssl1680.fw` into `/lib/firmware/silead/`. Needs calibration. See:
   * https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
   * https://github.com/pbnelson/rotswap/
   
