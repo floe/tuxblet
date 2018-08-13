@@ -65,3 +65,4 @@ Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal 
   * https://wiki.gnome.org/BastienNocera/Ondav975w
   * https://jonathansblog.co.uk/hardware-hacking
   * https://forum.chuwi.com/thread-2341-1-1.html
+  * https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
