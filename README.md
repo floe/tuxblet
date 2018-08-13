@@ -14,9 +14,15 @@ Sources:
   * https://jonathansblog.co.uk/hardware-hacking
   * https://forum.chuwi.com/thread-2341-1-1.html
   
-## Booting
+## Installation
 
-To boot from an external medium, press F7 when the CHUWI logo appears.
+  * Create USB install stick with Ubuntu 18.04.1
+  * To boot from an external medium, press F7 when the CHUWI logo appears.
+  * After installation, reboot and hit F7 again, then select "ubuntu".
+  * If boot hangs with "Started user manager for UID 120" (or similar):
+    * Switch to text console with Ctrl-Alt-F4
+    * Edit `/etc/gdm3/custom.conf`
+    * Set `WaylandEnable=false`
 
 ## GPU
 
