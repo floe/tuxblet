@@ -60,6 +60,18 @@ RTL8723BS - rather annoying, seems to require kernel patch + some custom hciatta
 
 Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal Processor).
 
+### USB Connectors
+
+Charging via USB-C connector works.
+
+### Micro HDMI Connector
+
+Untested.
+
+### Volume Buttons
+
+Not working (yet).
+
 ### Sources:
   * https://github.com/danielotero/linux-on-hi10
   * https://wiki.gnome.org/BastienNocera/Ondav975w
