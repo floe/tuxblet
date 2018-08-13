@@ -1,6 +1,6 @@
 # chuwi-hi10-pro
 
-I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04 on the Chuwi Hi10 Pro.
+I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04.1 on the Chuwi Hi10 Pro.
 
 My device:
   * Chuwi Hi10 ___Pro___
@@ -13,6 +13,10 @@ Sources:
   * https://wiki.gnome.org/BastienNocera/Ondav975w
   * https://jonathansblog.co.uk/hardware-hacking
   * https://forum.chuwi.com/thread-2341-1-1.html
+  
+## Booting
+
+To boot from an external medium, press F7 when the CHUWI logo appears.
 
 ## GPU
 
