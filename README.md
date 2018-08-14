@@ -45,7 +45,8 @@ Not working (yet). See:
 Silead MSSL1680
 
   * copy `mssl1680.fw` from this repo into `/lib/firmware/silead/`.
-  * Calibration: use https://github.com/reinderien/xcal to get xinput calibration matrix (ye olde `xinput_calibrator` won't work)
+  * Calibration: use https://github.com/reinderien/xcal to get xinput calibration matrix, say `n` to "Use rotation?"
+  * ye olde `xinput_calibrator` won't work anymore
   * `xinput --map-to-output silead_ts DSI-1`
   
 ### Bluetooth
