@@ -44,9 +44,9 @@ Not working (yet). See:
 
 Silead MSSL1680
 
-put `mssl1680.fw` into `/lib/firmware/silead/`. Needs calibration. See:
-  * https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
-  * https://github.com/pbnelson/rotswap/
+  * copy `mssl1680.fw` from this repo into `/lib/firmware/silead/`.
+  * Calibration: use https://github.com/reinderien/xcal to get xinput calibration matrix (ye olde `xinput_calibrator` won't work)
+  * `xinput --map-to-output silead_ts DSI-1`
   
 ### Bluetooth
 
@@ -73,8 +73,10 @@ Untested.
 Not working (yet).
 
 ### Sources:
-  * https://github.com/danielotero/linux-on-hi10
-  * https://wiki.gnome.org/BastienNocera/Ondav975w
-  * https://jonathansblog.co.uk/hardware-hacking
-  * https://forum.chuwi.com/thread-2341-1-1.html
-  * https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
+  * Generic tips: https://github.com/danielotero/linux-on-hi10
+  * Similar HW: https://wiki.gnome.org/BastienNocera/Ondav975w
+  * Generic tips: https://jonathansblog.co.uk/hardware-hacking
+  * Factory restore: https://forum.chuwi.com/thread-2341-1-1.html
+  * Generic tips: https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
+  * Touchscreen FW: https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
+  
