@@ -59,7 +59,7 @@ RTL8723BS - rather annoying, seems to require kernel patch + some custom hciatta
 
 ### Cameras
 
-Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal Processor).
+Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal Processor). However, this may take quite some time: https://bugzilla.kernel.org/show_bug.cgi?id=109821
 
 ### USB Connectors
 
