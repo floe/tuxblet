@@ -36,9 +36,8 @@ Works (surprisingly) out of the box. Thanks systemd ;-)
 
 ### Audio
 
-Not working (yet). See:
-  * https://github.com/plbossart/UCM/tree/master/bytcr-rt5651
-  * https://github.com/AdamWill/baytrail-m/blob/master/alsa/t100_B.state
+Headphones work wih the UCM files from alsa-lib-1.1.6 (see `sound/`).
+Speakers need some GPIO tweaking.
 
 ### Touchscreen
 
@@ -63,15 +62,12 @@ Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal 
 
 ### USB Connectors
 
-Charging via USB-C connector works.
+Charging via USB-C connector works.  
+Micro-USB connector untested.
 
 ### Micro HDMI Connector
 
 Untested.
-
-### Volume Buttons
-
-Not working (yet).
 
 ### Sources:
   * Generic tips: https://github.com/danielotero/linux-on-hi10
@@ -80,4 +76,4 @@ Not working (yet).
   * Factory restore: https://forum.chuwi.com/thread-2341-1-1.html
   * Generic tips: https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
   * Touchscreen FW: https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
-  
+
