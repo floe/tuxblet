@@ -24,7 +24,7 @@ Intel HD Graphics - works out of the box, accelerated FullHD videos in Youtube o
 
 ### Backlight Control
 
-see https://bugs.freedesktop.org/show_bug.cgi?id=96571 - probably just needs to throw i915 out of initrd.
+see https://bugs.freedesktop.org/show_bug.cgi?id=96571 - probably just needs to throw i915 out of initrd, or otherwise force i2c-designware-pci to be loaded ASAP on boot (kernel cmdline?).
 
 ### WiFi
 
