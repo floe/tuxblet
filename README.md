@@ -22,6 +22,10 @@ I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04.
 
 Intel HD Graphics - works out of the box, accelerated FullHD videos in Youtube on Firefox play smoothly.
 
+### Backlight Control
+
+see https://bugs.freedesktop.org/show_bug.cgi?id=96571 - probably just needs to throw i915 out of initrd.
+
 ### WiFi
 
 RTL8723BS - works out of the box, easily getting 4 MB/s downloads. No complaints.
