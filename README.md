@@ -50,11 +50,10 @@ Silead MSSL1680
   
 ### Bluetooth
 
-RTL8723BS - rather annoying, seems to require kernel patch + some custom hciattach? Since this is being worked on, I may just use an USB Bluetooth dongle in the dock for the moment.
-  * https://github.com/lwfinger/rtl8723bs_bt (custom hciattach + fw)
+RTL8723BS - rather annoying, seems to require kernel patch + some custom hciattach? Since this is being worked on, I may just use an USB Bluetooth dongle in the dock for the moment. Proper solution seems to be on track for kernel 4.19 or maybe 4.20: https://patchwork.kernel.org/cover/10553793/
+  * https://github.com/lwfinger/rtl8723bs_bt (custom hciattach + FW)
+  * https://github.com/jwrdegoede/linux-sunxi/commit/95440719e05c790f1bd91ed459708df476c7fdd3 (hacky kernel patch)
   * https://raw.githubusercontent.com/Manouchehri/vi8/master/Ubuntu_support_files/rfkill.patch (rfkill tweak)
-  * https://github.com/lwfinger/rtl8723bs_bt/issues/26 (problem with recent kernels)
-  * https://github.com/Miouyouyou/MyyQi/issues/7 (lenghty discussion for similar platform)
 
 ### Cameras
 
