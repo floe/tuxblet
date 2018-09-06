@@ -79,4 +79,5 @@ Untested.
   * Factory restore: https://forum.chuwi.com/thread-2341-1-1.html
   * Generic tips: https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
   * Touchscreen FW: https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
+  * Factory images: https://forum.chuwi.com/forum.php?mod=viewthread&tid=2341
 
