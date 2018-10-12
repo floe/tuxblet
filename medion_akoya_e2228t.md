@@ -7,3 +7,6 @@
   
 ### Lid switch
   * add button.lid_init_state=open to kernel cmdline
+
+### Misc
+  * add MOZ_USE_XINPUT2=1 to /etc/environment for Firefox to use touch scrolling
