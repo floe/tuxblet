@@ -80,4 +80,13 @@ Untested.
   * Generic tips: https://txlab.wordpress.com/2017/03/11/running-ubuntu-on-chuwi-hi10-pro-tablet/
   * Touchscreen FW: https://github.com/onitake/gsl-firmware/tree/master/firmware/chuwi/hi10_pro-z8350
   * Factory images: https://forum.chuwi.com/forum.php?mod=viewthread&tid=2341
+  * Russian forum: https://w3bsit3-dns.com/forum/index.php?showtopic=769658&st=5160
 
+### Additional Notes
+
+(supposed) BIOS reset procedure, found in Russian forum:
+  * Turn off the tablet.
+  * Hold the power key for 15-20 seconds.
+  * Release the button for 10-15 seconds.
+  * Turn it on as usual.
+  * All BIOS is reset to default.
