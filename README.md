@@ -6,6 +6,7 @@ I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04.
   * Chuwi Hi10 ___Pro___
   * HQ64 series, CPU Atom x5-Z8350
   * serial number HQ64G421709xxxxx
+  * BIOS version P1D6_C109D_B.237 x64
   * Ubuntu 18.04.1, stock kernel 4.15
   
 ### Installation
