@@ -32,32 +32,34 @@ Consequently, even if Windows has been replaced by Ubuntu, copying the `/EFI/ubu
 
 Unfortunately, this still causes the Android install to hang on boot.
 
-### GPU
+### Hardware
+
+## GPU
 
 Intel HD Graphics - works out of the box, accelerated FullHD videos in Youtube on Firefox play smoothly.
 
-### Backlight Control
+## Backlight Control
 
 see https://bugs.freedesktop.org/show_bug.cgi?id=96571 - probably just needs to throw i915 out of initrd, or otherwise force i2c-designware-pci to be loaded ASAP on boot (kernel cmdline?).
 
-### WiFi
+## WiFi
 
 RTL8723BS - works out of the box, easily getting 4 MB/s downloads. No complaints.
 
-### Suspend
+## Suspend
 
 Works out of the box, pleasant surprise :-)
 
-### Screen rotation
+## Screen rotation
 
 Works (surprisingly) out of the box. Thanks systemd ;-)
 
-### Audio
+## Audio
 
 Headphones work wih the UCM files from alsa-lib-1.1.6 (see `sound/`).
 Speakers need some GPIO tweaking.
 
-### Touchscreen
+## Touchscreen
 
 Silead MSSL1680
 
@@ -66,23 +68,23 @@ Silead MSSL1680
   * ye olde `xinput_calibrator` won't work anymore
   * `xinput --map-to-output silead_ts DSI-1`
   
-### Bluetooth
+## Bluetooth
 
 RTL8723BS - rather annoying, seems to require kernel patch + some custom hciattach? Since this is being worked on, I may just use an USB Bluetooth dongle in the dock for the moment. Proper solution seems to be on track for kernel 4.19 or maybe 4.20: https://patchwork.kernel.org/cover/10553793/
   * https://github.com/lwfinger/rtl8723bs_bt (custom hciattach + FW)
   * https://github.com/jwrdegoede/linux-sunxi/commit/95440719e05c790f1bd91ed459708df476c7fdd3 (hacky kernel patch)
   * https://raw.githubusercontent.com/Manouchehri/vi8/master/Ubuntu_support_files/rfkill.patch (rfkill tweak)
 
-### Cameras
+## Cameras
 
 Will probably be enabled when CONFIG_INTEL_ATOMISP matures (Atom Imaging Signal Processor). However, this may take quite some time: https://bugzilla.kernel.org/show_bug.cgi?id=109821
 
-### USB Connectors
+## USB Connectors
 
 Charging via USB-C connector works.  
 Micro-USB connector untested.
 
-### Micro HDMI Connector
+## Micro HDMI Connector
 
 Untested.
 
