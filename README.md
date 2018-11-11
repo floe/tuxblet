@@ -29,9 +29,21 @@ The built-in touch-enabled boot selector just seems to check for two files on th
   * `/EFI/BOOT/bootx64.efi` for Android (identical to `/loader.efi`)
   * `/EFI/Microsoft/Boot/bootmgfw.efi` for Windows
 
-Consequently, even if Windows has been replaced by Ubuntu, copying the `/EFI/ubuntu/` folder to `/EFI/Microsoft/Boot/` and renaming `shimx64.efi` to `bootmgfw.efi` allows booting Linux via the Windows boot selection entry.
+Consequently, after Windows has been replaced by Ubuntu, copying the `/EFI/ubuntu/` folder to `/EFI/Microsoft/Boot/` and renaming `shimx64.efi` to `bootmgfw.efi` allows booting Linux via the Windows boot selection entry.
 
-Unfortunately, this still causes the Android install to hang on boot.
+Unfortunately, this still causes the Android install to hang on boot after Linux has been installed. I was assuming, for a very long time, that this is also an EFI-related problem. However, after _multiple_ factory resets (see https://forum.chuwi.com/thread-2341-1-1.html and https://01.org/node/2463 for instructions), I finally found out that the problem is related to the very eager Ubuntu automounter, which grabs any ext4 filesystem it can find and mounts it read-write. 
+
+Of course, this shouldn't be a problem in theory, but this also happens for the Android system/data/etc. partitions, and whatever Ubuntu does to the ext4 FS when it's mounted, causes Android to croak. This means that even just booting a Ubuntu Live System from USB one single time will likely render the Android installation unbootable.
+
+I've finally managed to fix this by setting the respective UUIDs to `noauto` in `/etc/fstab` as follows:
+
+    # do _not_ automount the Android partitions
+    UUID=57f8f4bc-abf4-655f-bf67-946fc0f9f25b  /none ext4 ro,noauto 0 0
+    UUID=57f8f4bc-abf4-655f-bf67-946fc0f9f25b1 /none ext4 ro,noauto 0 0
+    UUID=57f8f4bc-abf4-655f-bf67-946fc0f9f25b2 /none ext4 ro,noauto 0 0
+    UUID=57f8f4bc-abf4-655f-bf67-946fc0f9f25b3 /none ext4 ro,noauto 0 0
+
+If you look closely, you will notice that entries 2-4 are not actually proper UUIDs, they have an additional digit from 1-3 at the very end. The reason for this is that all the Android partitions (system, cache, data, config) have the _same_ UUID and show up with the extra digit when the automounter grabs them. I'm not sure if this UUID duplication might actually be the root cause...
 
 ## Hardware
 
