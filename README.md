@@ -18,6 +18,19 @@ I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04.
     * Switch to text console with Ctrl-Alt-F4
     * Edit `/etc/gdm3/custom.conf`
     * Set `WaylandEnable=false`
+    
+### Linux/Android Dual-Boot
+
+This part is especially tricky, since there are so many poorly- or un-documented bits and pieces involved.
+
+The built-in touch-enabled boot selector just seems to check for two files on the EFI System Partition:
+
+  * `/EFI/BOOT/bootx64.efi` for Android (identical to `/loader.efi`)
+  * `/EFI/Microsoft/Boot/bootmgfw.efi` for Windows
+
+Consequently, even if Windows has been replaced by Ubuntu, copying the `/EFI/ubuntu/` folder to `/EFI/Microsoft/Boot/` and renaming `shimx64.efi` to `bootmgfw.efi` allows booting Linux via the Windows boot selection entry.
+
+Unfortunately, this still causes the Android install to hang on boot.
 
 ### GPU
 
