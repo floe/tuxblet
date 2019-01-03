@@ -8,7 +8,7 @@ I'm collecting all the bits and pieces here that are needed to run Ubuntu 18.04.
   * HQ64 series, CPU Atom x5-Z8350
   * serial number HQ64G421709xxxxx
   * BIOS version P1D6_C109D_B.237 x64
-  * Ubuntu 18.04.1, stock kernel 4.15
+  * Ubuntu 18.04.1, stock HWE kernel 4.18
   
 ### Installation
 
@@ -53,7 +53,7 @@ Intel HD Graphics - works out of the box, accelerated FullHD videos in Youtube o
 
 ### Backlight Control
 
-see https://bugs.freedesktop.org/show_bug.cgi?id=96571 - probably just needs to throw i915 out of initrd, or otherwise force i2c-designware-pci to be loaded ASAP on boot (kernel cmdline?).
+Works OOB on 4.18 (not on 4.15, see https://bugs.freedesktop.org/show_bug.cgi?id=96571)
 
 ### WiFi
 
@@ -70,7 +70,7 @@ Works (surprisingly) out of the box. Thanks systemd ;-)
 ### Audio
 
 Headphones work wih the UCM files from alsa-lib-1.1.6 (see `sound/`).
-Speakers need some GPIO tweaking.
+Speakers need some GPIO tweaking (see https://github.com/danielotero/linux-on-hi10/issues/8 for details).
 
 ### Touchscreen
 
