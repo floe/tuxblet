@@ -1,0 +1,3 @@
+* Serial no ...1704...
+* Correct Android FW: https://forum.chuwi.com/thread-4589-1-1.html
+* boot live stick with `systemd.mask=udisks2`
