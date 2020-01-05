@@ -45,6 +45,8 @@ I've finally managed to fix this by setting the respective UUIDs to `noauto` in 
 
 If you look closely, you will notice that entries 2-4 are not actually proper UUIDs, they have an additional digit from 1-3 at the very end. The reason for this is that all the Android partitions (system, cache, data, config) have the _same_ UUID and show up with the extra digit when the automounter grabs them. I'm not sure if this UUID duplication might actually be the root cause...
 
+As a hotfix, when booting from a live USB stick, you can also add `systemd.mask=udisks2` to the kernel commandline.
+
 ## Hardware
 
 ### GPU
