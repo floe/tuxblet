@@ -26,7 +26,7 @@ This part is especially tricky, since there are so many poorly- or un-documented
 
 The built-in touch-enabled boot selector just seems to check for two files on the EFI System Partition:
 
-  * `/EFI/BOOT/bootx64.efi` for Android (identical to `/loader.efi`)
+  * `/EFI/BOOT/bootx64.efi` for Android (identical to `/loader.efi` on the default EFI layout)
   * `/EFI/Microsoft/Boot/bootmgfw.efi` for Windows
 
 Consequently, after Windows has been replaced by Ubuntu, copying the `/EFI/ubuntu/` folder to `/EFI/Microsoft/Boot/` and renaming `shimx64.efi` to `bootmgfw.efi` allows booting Linux via the Windows boot selection entry.
